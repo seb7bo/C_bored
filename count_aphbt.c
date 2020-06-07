@@ -50,7 +50,14 @@ static void print_no_letters(tlanguage language,uint8 *alphabet)
     uint8 i;
     for(i = 0; i<27; i++)
     {
+      if((uint8)26 == i)
+      {
+        printf("Punctuation marks No %d \n",alphabet[i]);
+      }
+      else
+      {
         printf("Letter %c No %d \n",(i+65),alphabet[i]);
+      }
     }
 }
 
