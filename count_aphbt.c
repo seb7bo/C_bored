@@ -16,6 +16,9 @@ enum elanguage
  };
 typedef enum elanguage tlanguage;
 
+static void count_letters_in_txt(uint8 *ptext, tlanguage language,uint8 *alphabet);
+static void print_no_letters(tlanguage language,uint8 *alphabet);
+
 static void count_letters_in_txt(uint8 *ptext, tlanguage language,uint8 *alphabet)
 {
     uint8 *plocal = ptext;
