@@ -26,7 +26,7 @@ static void count_letters_in_txt(uint8 *ptext, tlanguage language,uint8 *alphabe
     uint8 localIndex = 0;
     while(plocal[index] != '\0')
     {
-     
+
          if((uint8)96<plocal[index] && (uint8)123 > plocal[index])
          {
             localIndex = plocal[index] - (uint8)97;
@@ -34,7 +34,7 @@ static void count_letters_in_txt(uint8 *ptext, tlanguage language,uint8 *alphabe
          }
          else if((uint8)64<plocal[index] && (uint8)91 > plocal[index])
          {
-            localIndex = plocal[index] - (uint8)65; 
+            localIndex = plocal[index] - (uint8)65;
             alphabet[localIndex] += 1;
          }
          else
@@ -44,6 +44,8 @@ static void count_letters_in_txt(uint8 *ptext, tlanguage language,uint8 *alphabe
          index++;
     }
 }
+
+// test
 
 static void print_no_letters(tlanguage language,uint8 *alphabet)
 {
